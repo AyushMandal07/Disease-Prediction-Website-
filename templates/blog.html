@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Building a Symptom-Based Disease Diagnosis Web App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+      }
+      h2 {
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      .hero {
+        background: url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      .hero h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      .content-section {
+        padding: 40px 0;
+      }
+      .content-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+      .feature-list li {
+        margin-bottom: 10px;
+      }
+      .feature-list i {
+        color: #007bff;
+        margin-right: 10px;
+      }
+      .image-container img {
+        border-radius: 8px;
+      }
+      .btn-get-started {
+        background-color: #007bff;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Symptom-Based Disease Diagnosis Web App</h1>
+    </section>
+
+    <!-- Main Content Section -->
+    <div class="container content-section">
+
+      <h2 class="text-center">Building a Symptom-Based Disease Diagnosis Web App with Flask & Machine Learning</h2>
+
+      <div class="row mb-4">
+        <div class="col-md-8 mx-auto">
+          <p class="lead">In today’s fast-paced digital world, access to timely and accurate healthcare information is crucial. This blog covers our journey of building a symptom-based disease diagnosis web app using Flask and machine learning to help users get health insights quickly and effectively.</p>
+        </div>
+      </div>
+
+      <!-- The Problem Section -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <h3><i class="bi bi-exclamation-triangle"></i> The Problem</h3>
+          <p>Many people experience symptoms but struggle to get quick answers about their health concerns. It can be challenging to differentiate between various illnesses, especially when symptoms overlap. Our goal was to create a platform that makes diagnosing symptoms easier and more accessible.</p>
+        </div>
+        <div class="col-md-6 image-container">
+          <img src="{{ url_for('static', filename='problem overview.png') }}" class="img-fluid" alt="Problem Overview">
+        </div>
+      </div>
+
+      <!-- The Solution Section -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2">
+          <h3><i class="bi bi-lightbulb"></i> The Solution</h3>
+          <p>We created a web app where users can enter their symptoms, and the app uses a pre-trained Decision Tree Classifier model to predict the most likely disease. Here's how it works:</p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check-circle"></i><strong>Symptom Input:</strong> Users input symptoms through a simple, user-friendly interface.</li>
+            <li><i class="bi bi-check-circle"></i><strong>ML Model:</strong> A trained Decision Tree Classifier predicts diseases based on symptoms.</li>
+            <li><i class="bi bi-check-circle"></i><strong>Instant Prediction:</strong> Users get quick predictions about potential health concerns.</li>
+            <li><i class="bi bi-check-circle"></i><strong>Additional Info:</strong> The app provides disease descriptions, medications, and precautions.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 order-md-1 image-container">
+          <img src="{{ url_for('static', filename='ai helping.png') }}" class="img-fluid" alt="Solution Overview">
+        </div>
+      </div>
+
+      <!-- Key Features Section -->
+      <h3><i class="bi bi-stars"></i> Key Features</h3>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <ul class="feature-list">
+            <li><i class="bi bi-ui-checks-grid"></i><strong>User-Friendly Interface:</strong> Easy-to-use symptom input form for smooth user experience.</li>
+            <li><i class="bi bi-graph-up-arrow"></i><strong>Accurate Predictions:</strong> Our machine learning model provides precise disease predictions.</li>
+            <li><i class="bi bi-info-circle"></i><strong>Comprehensive Information:</strong> Detailed descriptions, precautions, and medications for diseases.</li>
+            <li><i class="bi bi-journal"></i><strong>Educational Content:</strong> Informative blog posts on various health topics empower users.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 image-container">
+          <img src="{{ url_for('static', filename='better ai.png') }}" class="img-fluid" alt="Key Features">
+        </div>
+      </div>
+
+      <!-- Conclusion Section -->
+      <h3><i class="bi bi-file-earmark-check"></i> Conclusion</h3>
+      <p>Our Symptom-Based Disease Diagnosis Web App puts the power of machine learning and healthcare information at users' fingertips. By blending technology and healthcare, this app delivers fast, reliable, and accurate insights for health-conscious individuals. Our goal is to improve healthcare accessibility and empower users to take charge of their well-being.</p>
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-get-started">Get Started Today</a>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
